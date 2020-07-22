@@ -1,0 +1,299 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #acacac;
+  transition: color 0.3s ease-in;
+}
+
+.continer {
+  width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+span {
+  padding: 5px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+i {
+  color: white;
+  font-size: 12px;
+}
+.header-lang {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-bar {
+  background-color: #1c66de;
+  height: 950px;
+}
+
+.pl {
+  padding-left: 2rem;
+}
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.border-right {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.p-all {
+  padding: 13px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.center {
+  justify-content: space-around;
+}
+.mt {
+  margin-top: 2em;
+  padding: 5px;
+}
+.pr {
+  padding-right: 6px;
+}
+.btn {
+  padding: 15px 30px 15px 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  transition: background-color 700ms, color 700ms;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #1abc9c;
+  transition: background-color 700ms, color 700ms;
+}
+.icon {
+  color: white;
+  transition: color 700ms;
+}
+.icon:hover {
+  color: #1abc9c;
+  transition: color 700ms;
+}
+.flex-box {
+  display: flex;
+}
+.owl-carousel {
+  margin-top: 8rem;
+  height: 500px;
+}
+
+.flex-box img {
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  animation: moveTextUp 1s ease-in-out;
+}
+
+@keyframes moveTextUp {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}
+
+.flex-col {
+  color: white;
+
+  line-height: 1.5;
+}
+
+.flex-col h2 {
+  font-size: 3.8rem;
+  padding-bottom: 20px;
+}
+.flex-col :nth-child(2) {
+  font-size: 2rem;
+}
+.flex-col :nth-child(3) {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.flex-col :nth-child(4) {
+  background-color: white;
+  color: #1c66de;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 160px;
+  padding: 10px;
+  padding-left: 24px;
+  transition: background-color 0.7s;
+}
+.flex-col :nth-child(4):hover {
+  background-color: #1c66de;
+  color: white;
+  transition: background-color 0.7s, color 0.7;
+}
+
+.welcome-img {
+  width: 100%;
+  padding-top: 90px;
+}
+
+.clouds {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  top: 162px;
+  z-index: 500;
+  visibility: hidden;
+  padding: 10px;
+}
+.clouds :nth-child(1) {
+  width: 60px;
+  height: 37px;
+  z-index: 500;
+  animation: cloudeMove 18s ease-in-out infinite;
+}
+
+.clouds :nth-child(2) {
+  width: 90px;
+
+  height: 55px;
+  z-index: 500;
+  animation: cloudeMove 18s ease-in infinite 20s;
+}
+.clouds :nth-child(3) {
+  z-index: 500;
+  width: 100px;
+  height: 81px;
+  padding: 10px;
+  animation: cloudeMove 17s ease-in infinite;
+}
+.clouds :nth-child(4) {
+  z-index: 500;
+  width: 70px;
+  height: 64px;
+  animation: cloudeMove 30s ease-in infinite 24s;
+}
+.clouds :nth-child(5) {
+  z-index: 500;
+  width: 100px;
+  height: 69px;
+  animation: cloudeMove 19s ease-in infinite 24s;
+}
+
+@keyframes cloudeMove {
+  0% {
+    visibility: visible;
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-1500px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .continer {
+    width: 979px;
+  }
+  header {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .nav-info {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .owl-carousel .flex-box img {
+    width: 584px;
+  }
+
+  .owl-carousel {
+    animation: fadeSlider1 1.3s ease-in;
+  }
+
+  @keyframes fadeSlider1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1201px) {
+  .owl-carousel {
+    animation: fadeSlider 1.4s ease-in;
+  }
+
+  @keyframes fadeSlider {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
